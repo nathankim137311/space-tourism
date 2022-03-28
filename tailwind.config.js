@@ -3,7 +3,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background-home-mobile': "url('/src/assets/home/background-home-mobile.jpg')"
+      },
+      fontFamily: {
+        'bellefair': ['Bellefair', 'sans-serif'],
+        'barlow': ['Barlow', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
