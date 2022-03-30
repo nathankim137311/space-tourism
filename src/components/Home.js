@@ -6,7 +6,7 @@ export default function Home() {
     <div className='flex flex-col justify-center bg-background-home-mobile bg-cover text-white h-screen'>
         <NavBar />
         <div className='flex flex-col items-center'>
-            <div className='flex flex-col items-center my-16 px-4'>
+            <div className='flex flex-col items-center my-16 px-6'>
                 <div className='mb-8'>
                     <span className='text-center text-[#D0D6F9] font-barlow font-normal text-base block w-full'>SO, YOU WANT TO TRAVEL TO</span>
                     <h1 className='text-center mt-8 text-7xl font-bellefair'>SPACE</h1>
