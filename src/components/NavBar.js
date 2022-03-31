@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <>
-        {isOpen && <SideBar className='absolute top-0 right-0' setIsOpen={setIsOpen} />}
+        <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <header className='absolute top-0 w-full flex flex-row justify-between items-center p-6 z-10'>
             <img className='h-10 w-10' src={logoIcon} alt="Company logo" />
             <nav>
@@ -20,9 +20,9 @@ export default function NavBar() {
   )
 }
 
-const SideBar = ({ setIsOpen }) => {
+const SideBar = ({ isOpen, setIsOpen }) => {
     return (
-        <div className='absolute top-0 right-0'>
+        <div className={isOpen ? 'absolute top-0 right-0 transition-all ease-in-out duration-300' : 'absolute top-0 translate-x-[100vw]'}>
             <div className='relative bg-black w-64 h-screen shadow-md z-20'>
                 <div className='flex w-full justify-end p-6'>
                     <button onClick={() => setIsOpen(false)}><img className='my-[10px]' src={closeIcon} alt="Close sidebar" /></button>
@@ -45,18 +45,3 @@ const SideBar = ({ setIsOpen }) => {
         </div>
     )
 }
-
-{/* <ul className='flex flex-row'>
-    <li>
-        <Link to='home'><span>00</span> HOME</Link>
-    </li>
-    <li>
-        <Link to='destination'><span>01</span> DESTINATION</Link>
-    </li>
-    <li>
-        <Link to='crew'><span>02</span> CREW</Link>
-    </li>
-    <li>
-        <Link to='technology'><span>03</span> TECHNOLOGY</Link>
-    </li>
-</ul> */}
