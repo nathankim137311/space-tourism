@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'background-home-mobile': "url('/src/assets/home/background-home-mobile.jpg')"
+        'background-home-mobile': "url('/src/assets/home/background-home-mobile.jpg')",
+        'background-destination-mobile': "url('/src/assets/destination/background-destination-mobile.jpg')"
       },
       fontFamily: {
         'bellefair': ['Bellefair', 'sans-serif'],

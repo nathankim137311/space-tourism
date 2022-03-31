@@ -11,7 +11,9 @@ export default function NavBar() {
     <>
         <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <header className='absolute top-0 w-full flex flex-row justify-between items-center p-6 z-10'>
-            <img className='h-10 w-10' src={logoIcon} alt="Company logo" />
+            <Link to='/'>
+                <img className='h-10 w-10' src={logoIcon} alt="Company logo" />
+            </Link>
             <nav>
                 {!isOpen && <button onClick={() => setIsOpen(true)}><img src={hamburgerIcon} alt="Hamburger menu for navigation" /></button>}
             </nav>
@@ -29,7 +31,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
                 </div>
                 <ul className='font-barlow flex flex-col items-center px-6'>
                     <li className='w-full my-6'>
-                        <Link to='home'><span className='font-extrabold mr-2'>00</span> HOME</Link>
+                        <Link to='/'><span className='font-extrabold mr-2'>00</span> HOME</Link>
                     </li>
                     <li className='w-full mb-6'>
                         <Link to='destination'><span className='font-extrabold mr-2'>01</span> DESTINATION</Link>
