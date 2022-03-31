@@ -22,7 +22,7 @@ export default function NavBar() {
 
 const SideBar = ({ isOpen, setIsOpen }) => {
     return (
-        <div className={isOpen ? 'absolute top-0 right-0 transition-all ease-in-out duration-300' : 'absolute top-0 translate-x-[100vw]'}>
+        <div className={isOpen ? 'fixed top-0 right-0 transition-all ease-in-out duration-300 z-20' : 'fixed top-0 translate-x-[100vw] z-20'}>
             <div className='relative bg-black w-64 h-screen shadow-md z-20'>
                 <div className='flex w-full justify-end p-6'>
                     <button onClick={() => setIsOpen(false)}><img className='my-[10px]' src={closeIcon} alt="Close sidebar" /></button>
