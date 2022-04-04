@@ -44,7 +44,7 @@ const DestinationInfo = ({ destination }) => {
             </div>
             <div>
                 <h1 className='font-bellefair text-center text-5xl mt-8 mb-4 text-white'>{destination.name.toUpperCase()}</h1>
-                <p className='text-center pb-8 border-b-[1px] text-sm leading-6'>{destination.description}</p>
+                <p className='text-center pb-8 border-b-[1px] text-base leading-6'>{destination.description}</p>
             </div>
             <div className='w-full mb-10'>
                 <div className='flex flex-col items-center w-full mb-4'>
