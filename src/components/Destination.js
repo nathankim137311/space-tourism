@@ -14,7 +14,7 @@ export default function Destination() {
       <NavBar />
       <div className='flex flex-col justify-start items-center pt-24 font-barlow px-6'>
         <div>
-            <h2 className='text-white'><span className='mr-4'>01</span> PICK YOUR DESTINATION</h2>
+            <h2 className='text-white'><span className='mr-4 text-gray-400'>01</span> PICK YOUR DESTINATION</h2>
         </div>
         <div className='mt-8'>
             <ul className='flex flex-row text-sm h-6'>
