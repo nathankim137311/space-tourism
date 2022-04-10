@@ -40,7 +40,7 @@ const DestinationInfo = ({ destination }) => {
     return (
         <>
             <div className='my-8'>
-                <img className='w-44 h-44' src={destination.img_url} alt="Moon from outer space" />
+                <img className='w-44 h-44' src={destination.img_url} alt={destination.name} />
             </div>
             <div>
                 <h1 className='font-bellefair text-center text-5xl mt-8 mb-4 text-white'>{destination.name.toUpperCase()}</h1>

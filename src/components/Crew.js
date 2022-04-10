@@ -26,7 +26,7 @@ const CrewMember = ({
     return (
         <div>
             <div className='w-full flex flex-row justify-center border-b-[1px] border-gray-700'>
-                <img className='h-56 w-auto' src={member.img_url} alt="" />
+                <img className='h-56 w-auto' src={member.img_url} alt={member.name} />
             </div>
             <div className='w-full flex flex-row justify-center py-8'>
                 <ul className='flex flex-row justify-between h-6 w-24'>

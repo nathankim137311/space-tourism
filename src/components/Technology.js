@@ -26,7 +26,7 @@ const Terminology = ({
     return (
         <div>
             <div>
-                <img className='h-44 w-full' src={term.img_url} alt="" />
+                <img className='h-44 w-full' src={term.img_url} alt={term.title} />
             </div>
             <div className='flex flex-row justify-center my-8'>
                 <ul className='flex flex-row w-40 justify-between'>
