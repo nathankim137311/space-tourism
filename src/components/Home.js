@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
                 </div>
                 <p className='text-center text-[#D0D6F9] text-base leading-6 font-barlow font-normal'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
             </div>
-            <button className='bg-white p-4 h-32 w-32 rounded-full font-bellefair text-lg text-[#0B0D17] mb-16'>EXPLORE</button>
+            <Link to='/destination'>
+              <button className='bg-white p-4 h-32 w-32 rounded-full font-bellefair text-lg text-[#0B0D17] mb-16'>EXPLORE</button>
+            </Link>
         </div>
     </div>
   )
