@@ -34,13 +34,13 @@ const SideBar = ({ isOpen, setIsOpen }) => {
                         <Link to='/'><span className='font-extrabold mr-2 w-5 inline-block'>00</span> HOME</Link>
                     </li>
                     <li className='w-full mb-6'>
-                        <Link to='destination'><span className='font-extrabold mr-2 w-5 inline-block'>01</span> DESTINATION</Link>
+                        <Link to='/destination'><span className='font-extrabold mr-2 w-5 inline-block'>01</span> DESTINATION</Link>
                     </li>
                     <li className='w-full mb-6'>
-                        <Link to='crew'><span className='font-extrabold mr-2 w-5 inline-block'>02</span> CREW</Link>
+                        <Link to='/crew'><span className='font-extrabold mr-2 w-5 inline-block'>02</span> CREW</Link>
                     </li>
                     <li className='w-full mb-6'>
-                        <Link to='technology'><span className='font-extrabold mr-2 w-5 inline-block'>03</span> TECHNOLOGY</Link>
+                        <Link to='/technology'><span className='font-extrabold mr-2 w-5 inline-block'>03</span> TECHNOLOGY</Link>
                     </li>
                 </ul>
             </div>
