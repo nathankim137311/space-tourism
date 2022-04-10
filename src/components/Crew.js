@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
-import crew from './CrewInfo'
+import data from '../assets/data.json'
 
 export default function Crew() {
     const [currentMember, setCurrentMember] = useState(0)
@@ -12,7 +12,7 @@ export default function Crew() {
             <div className='mb-8'>
                 <h2 className='text-white'><span className='mr-4 text-gray-400'>02</span> MEET YOUR CREW</h2>
             </div>
-            <CrewMember member={crew[currentMember]} currentMember={currentMember} setCurrentMember={setCurrentMember} />
+            <CrewMember member={data.crew[currentMember]} currentMember={currentMember} setCurrentMember={setCurrentMember} />
         </div>
     </div>
   )
@@ -30,7 +30,7 @@ const CrewMember = ({
             </div>
             <div className='w-full flex flex-row justify-center py-8'>
                 <ul className='flex flex-row justify-between h-6 w-24'>
-                    {crew.map((member, index) => {
+                    {data.crew.map((member, index) => {
                         return (
                             <li className='flex flex-row items-center' key={index}>
                                 <button 
