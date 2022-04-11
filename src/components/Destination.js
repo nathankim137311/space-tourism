@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
-import destinations from './DestinationInfo'
+import data from '../assets/data.json'
 
 export default function Destination() {
     const [currentDestination, setCurrentDestination] = useState(0);
@@ -18,9 +18,9 @@ export default function Destination() {
         </div>
         <div className='mt-8'>
             <ul className='flex flex-row text-sm h-6'>
-                {destinations.map((destination, index) => {
+                {data.destinations.map((destination, index) => {
                     return (
-                        <li key={index} className={index === destinations.length - 1 ? '' : 'mr-4'}>
+                        <li key={index} className={index === data.destinations.length - 1 ? '' : 'mr-4'}>
                             <button 
                                 className={currentDestination === index ? 'border-b-2 underline-offset-8 h-full' : 'h-full'}
                                 onClick={() => switchTabs(index)}
@@ -30,7 +30,7 @@ export default function Destination() {
                 })}
             </ul>
         </div>
-        <DestinationInfo destination={destinations[currentDestination]} />
+        <DestinationInfo destination={data.destinations[currentDestination]} />
       </div>
     </div>
   )
@@ -40,7 +40,7 @@ const DestinationInfo = ({ destination }) => {
     return (
         <>
             <div className='my-8'>
-                <img className='w-44 h-44' src={destination.img_url} alt="Moon from outer space" />
+                <img className='w-44 h-44' src={destination.img_url} alt={destination.name} />
             </div>
             <div>
                 <h1 className='font-bellefair text-center text-5xl mt-8 mb-4 text-white'>{destination.name.toUpperCase()}</h1>
